@@ -1,0 +1,140 @@
+*{
+    margin: 1;
+    padding: 1;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(13, 6, 35, 0.883);
+}
+header{
+background-color: white;
+padding: 15px;
+}
+header > h1{
+    color: green;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.score-board{
+    margin: 20px auto;
+    border: 3px solid white;
+    border-radius: 4px;
+    text-align: center;
+    width: 230px;
+    color: white;
+    font-size: 28px;
+    padding: 15px 20px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.badge{
+    background-color: rgb(151, 203, 20);
+    color: white;
+    font-size: 13px;
+    padding: 3px 11px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#user-label {
+    position:absolute;
+    top: 25px;
+    left: -25px;
+}
+#computer-label {
+    position: absolute;
+    top: 25px;
+    right: -25px;
+}
+.result{
+    font-size: 30px;
+    color: white;
+}
+.result > p{
+    text-align: center;
+   font-weight: bold;
+   font-family: 'Times New Roman', Times, serif;
+}
+.choices{
+    
+    margin: 30px 45px;
+    height: 120px;
+     text-align: center;
+
+}
+
+.choice{
+    
+    width: 100px;
+    border: 4px solid white;
+    margin:  0 10px;
+    display: inline;
+    height: 120px;
+    background-color: rgb(209, 205, 14);
+    padding: 10px;
+    transition: all 1s ease;
+    overflow: hidden;
+}
+
+
+
+.choice:hover{
+    cursor: pointer;
+    background: red;
+    transform: scale(1.02);
+}
+#action-message{
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.game_container{
+    background: #ddd;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 20px #888;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 700px;
+    text-align: center;
+    font-family: Tahoma;
+    user-select: none;
+}
+.game_container .player {
+    background: #51f93e!important;
+    box-shadow: 0 0 20px #888;
+    transform: scale(1.02);
+}
+.game_container .computer {
+    background: #21deff!important;
+    box-shadow: 0 0 20px #888;
+    transform: scale(1.02);
+}
+.game_container > div {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    width: calc(100% / 3 - 10px * 2 - 4px - 10px * 2);
+    overflow: hidden;
+    border-radius: 4px;
+    transition: all .5s;
+    cursor: pointer;
+    user-select: none;
+}
+.game_container > div:hover {
+    background: #ccc;
+    box-shadow: 0 0 20px #888;
+    transform: scale(1.02);
+}
+.game_container > div > img {
+    width: 80%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+.game_container > div > span {
+    font-size: 32px;
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+}

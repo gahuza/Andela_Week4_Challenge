@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="newGame">
+    <header>
+        <h1>Rock Paper Scissor Game Designed by Jadoo</h1>
+    </header>
+    <div class="score-board">
+        <div id="user-label" class="badge">User</div>
+        <div id="computer-label" class="badge">Computer</div>
+        <span id="user-sore">0</span><span id="computer-score">0</span>
+        <div id=""></div>
+        <button onclick="newGame()">clear</button>
+    </div>
+    <div class="result">
+        <p>Paper Covers Rock : you WIN!</p>
+    </div>
+    <div class="game_container">
+        <div id="r" class="" onclick="pickOption(1)">
+            <img src="images/rock.png">
+            <span>Rock</span>
+        </div>
+        <div id="p" class="" onclick="pickOption(2)">
+            <img src="images/paper.png">
+            <span>Paper</span>
+        </div>
+        <div id="s" class="" onclick="pickOption(3)">
+            <img src="images/scissor.png">
+            <span>Scissors</span>
+        </div>
+    </div>
+    <p id="action-message">Make your move</p>
+    <script src="app1.js" charset="utf-8"></script>
+</body>
+</html>
